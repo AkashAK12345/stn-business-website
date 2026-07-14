@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fcfcfc;
+  --foreground: #1a1a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-oswald), ui-sans-serif, system-ui, sans-serif;
+  
+  --color-charcoal: #1a1a1a;
+  --color-near-black: #111111;
+  --color-steel: #6b7280;
+  --color-steel-light: #9ca3af;
+  --color-industrial-red: #9B1B22; /* Deep, rich industrial red */
+  --color-industrial-red-hover: #7A151A;
+  --color-off-white: #fcfcfc;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom Utilities for premium design */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .easing-premium {
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .drafting-line-top {
+    position: relative;
+  }
+  .drafting-line-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: repeating-linear-gradient(
+      to right,
+      var(--color-steel) 0,
+      var(--color-steel) 2px,
+      transparent 2px,
+      transparent 6px
+    );
+    opacity: 0.15;
+  }
+
+  .drafting-line-bottom {
+    position: relative;
+  }
+  .drafting-line-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: repeating-linear-gradient(
+      to right,
+      var(--color-steel) 0,
+      var(--color-steel) 2px,
+      transparent 2px,
+      transparent 6px
+    );
+    opacity: 0.15;
+  }
+
+  .animate-image-fade {
+    animation: imageFadeIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+
+  .logo-sweep {
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-sweep::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 40%,
+      rgba(255, 255, 255, 0.2) 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    transform: rotate(30deg) translate(-100%, -100%);
+    animation: sweep 45s infinite cubic-bezier(0.25, 1, 0.5, 1);
+    pointer-events: none;
+  }
+}
+
+@keyframes sweep {
+  0% { transform: rotate(30deg) translate(-100%, -100%); }
+  5% { transform: rotate(30deg) translate(100%, 100%); }
+  100% { transform: rotate(30deg) translate(100%, 100%); }
+}
+
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
