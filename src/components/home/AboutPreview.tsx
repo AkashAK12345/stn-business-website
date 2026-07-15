@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { companyInfo } from "@/data/company";
+import IndustrialInteraction from "@/components/ui/IndustrialInteraction";
 
 export default function AboutPreview() {
   return (
@@ -36,11 +37,10 @@ export default function AboutPreview() {
                 {companyInfo.description} We believe in providing robust materials for demanding environments, backing every product with decades of inherited knowledge.
               </p>
               
-              <Link
-                href="/about"
-                className="inline-block border border-industrial-red text-industrial-red hover:bg-industrial-red hover:text-off-white px-8 py-4 uppercase tracking-widest font-bold text-sm transition-all duration-300"
-              >
-                Read Our Story
+              <Link href="/about" className="inline-block">
+                <IndustrialInteraction className="inline-block border border-industrial-red text-industrial-red hover:bg-industrial-red hover:text-off-white px-8 py-4 uppercase tracking-widest font-bold text-sm">
+                  Read Our Story
+                </IndustrialInteraction>
               </Link>
             </motion.div>
           </div>
@@ -59,13 +59,13 @@ export default function AboutPreview() {
                 <span className="font-heading text-[8rem] md:text-[12rem] lg:text-[14rem] text-charcoal/50 leading-none absolute select-none pointer-events-none">
                   {companyInfo.established}
                 </span>
-                <div className="relative z-10 space-y-6">
-                  <div className="w-24 h-24 mx-auto border-4 border-industrial-red rounded-full flex items-center justify-center bg-white overflow-hidden p-2 logo-sweep">
+                <div className="relative z-10 space-y-5">
+                  <div className="w-28 h-28 md:w-32 md:h-32 mx-auto border-4 border-industrial-red rounded-full flex items-center justify-center bg-white overflow-hidden p-2 logo-sweep shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
                     <Image
                       src="/images/stn-logo.png"
-                      alt="S. T. Natarajan & Sons Logo"
-                      width={80}
-                      height={80}
+                      alt="S. T. Natarajan & Sons Official Logo"
+                      width={110}
+                      height={110}
                       className="object-contain w-full h-full"
                     />
                   </div>

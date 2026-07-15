@@ -16,7 +16,7 @@ export default function CategorySection({
   return (
     <section
       id={category.slug}
-      className={`py-12 md:py-20 scroll-mt-[130px] ${
+      className={`py-12 md:py-20 scroll-mt-[130px] drafting-line-top ${
         isDark ? "bg-[#fcfcfc]" : "bg-off-white"
       }`}
     >

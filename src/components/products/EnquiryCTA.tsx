@@ -25,7 +25,8 @@ export default function EnquiryCTA() {
 
             <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
               <a
-                href={`mailto:${companyInfo.email}`}
+                href="mailto:stnmdu@gmail.com"
+                aria-label="Send an email to ST Natarajan & Sons"
                 className="flex flex-col items-center justify-center p-8 bg-near-black border border-steel/20 hover:border-industrial-red transition-all duration-300 group"
               >
                 <Mail className="w-8 h-8 text-industrial-red mb-4 group-hover:scale-110 transition-transform" />

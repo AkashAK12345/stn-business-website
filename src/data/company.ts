@@ -9,7 +9,7 @@ export const companyInfo = {
     state: "Tamil Nadu",
     country: "India",
   },
-  email: "stmdu@gmail.com",
+  email: "stnmdu@gmail.com",
   phone: "", // To be provided
   legacyWebsite: "stnmdu.in",
   description:

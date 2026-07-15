@@ -13,19 +13,21 @@ export default function Footer() {
           
           {/* Brand & Heritage */}
           <div className="space-y-6">
-            <Link href="/" className="group flex items-center space-x-3 mb-4">
-              <Image 
-                src="/images/stn-logo.png" 
-                alt="S. T. Natarajan & Sons Logo" 
-                width={48} 
-                height={48} 
-                className="object-contain"
-              />
-              <div className="flex flex-col">
-                <h3 className="font-heading text-xl uppercase tracking-widest text-off-white mb-0">
+            <Link href="/" className="group flex items-center space-x-4 mb-5">
+              <div className="relative flex items-center justify-center w-[58px] h-[58px] md:w-[64px] md:h-[64px] shrink-0 bg-white/5 rounded-full logo-sweep overflow-hidden shadow-lg border border-steel/10">
+                <Image 
+                  src="/images/stn-logo.png" 
+                  alt="S. T. Natarajan & Sons Official Logo" 
+                  width={64} 
+                  height={64} 
+                  className="object-contain w-full h-full"
+                />
+              </div>
+              <div className="flex flex-col justify-center translate-y-[2px]">
+                <h3 className="font-heading text-xl md:text-2xl uppercase tracking-[0.08em] text-off-white mb-0 leading-none">
                   {companyInfo.name}
                 </h3>
-                <p className="text-industrial-red tracking-widest uppercase text-xs font-semibold">
+                <p className="text-industrial-red tracking-[0.22em] uppercase text-[10.5px] md:text-xs font-semibold mt-1.5 leading-none">
                   Established {companyInfo.established}
                 </p>
               </div>
@@ -104,7 +106,7 @@ export default function Footer() {
               )}
               <li className="flex items-center space-x-3 text-steel-light text-sm">
                 <Mail className="w-5 h-5 text-industrial-red shrink-0" />
-                <a href={`mailto:${companyInfo.email}`} className="hover:text-industrial-red transition-colors">
+                <a href="mailto:stnmdu@gmail.com" aria-label="Send an email to ST Natarajan & Sons" className="hover:text-industrial-red transition-colors">
                   {companyInfo.email}
                 </a>
               </li>

@@ -32,22 +32,22 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
-          <Link href="/" className="group flex items-center z-50 relative space-x-3">
-            <div className="relative logo-sweep rounded-full overflow-hidden bg-white/5">
+          <Link href="/" className="group flex items-center z-50 relative space-x-3.5 md:space-x-4">
+            <div className="relative logo-sweep rounded-full overflow-hidden bg-white/5 flex items-center justify-center w-[46px] h-[46px] md:w-[52px] md:h-[52px] shrink-0">
               <Image 
                 src="/images/stn-logo.png" 
-                alt="S. T. Natarajan & Sons Logo" 
-                width={40} 
-                height={40} 
-                className="object-contain"
+                alt="S. T. Natarajan & Sons Official Logo" 
+                width={52} 
+                height={52} 
+                className="object-contain w-full h-full"
                 priority
               />
             </div>
-            <div className="flex flex-col">
-              <span className={`font-heading text-xl md:text-2xl font-bold tracking-wider uppercase transition-colors duration-300 ${isScrolled ? "text-off-white" : "text-off-white md:text-off-white"}`}>
+            <div className="flex flex-col justify-center translate-y-[2px]">
+              <span className={`font-heading text-xl md:text-2xl font-bold tracking-[0.08em] uppercase leading-none transition-colors duration-300 ${isScrolled ? "text-off-white" : "text-off-white"}`}>
                 S. T. Natarajan & Sons
               </span>
-              <span className={`text-[10px] md:text-xs tracking-[0.2em] uppercase transition-colors duration-300 ${isScrolled ? "text-steel-light" : "text-steel-light"}`}>
+              <span className={`text-[10.5px] md:text-xs tracking-[0.22em] uppercase mt-1.5 leading-none transition-colors duration-300 ${isScrolled ? "text-steel-light" : "text-steel-light"}`}>
                 Est. {companyInfo.established}
               </span>
             </div>

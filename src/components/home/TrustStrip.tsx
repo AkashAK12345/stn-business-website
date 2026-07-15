@@ -1,6 +1,7 @@
 "use client";
 
 import { companyInfo } from "@/data/company";
+import CountUp from "@/components/ui/CountUp";
 
 export default function TrustStrip() {
   return (
@@ -10,7 +11,7 @@ export default function TrustStrip() {
           
           <div className="px-4 text-center">
             <p className="text-4xl md:text-5xl font-heading font-bold text-off-white mb-2">
-              {new Date().getFullYear() - companyInfo.established}+
+              <CountUp to={new Date().getFullYear() - companyInfo.established} suffix="+" />
             </p>
             <p className="text-charcoal uppercase tracking-widest font-bold text-xs md:text-sm">
               Years Experience
@@ -37,7 +38,7 @@ export default function TrustStrip() {
 
           <div className="px-4 text-center">
             <p className="text-4xl md:text-5xl font-heading font-bold text-off-white mb-2">
-              6
+              <CountUp to={6} />
             </p>
             <p className="text-charcoal uppercase tracking-widest font-bold text-xs md:text-sm">
               Core Product Categories

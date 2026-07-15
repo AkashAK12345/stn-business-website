@@ -51,7 +51,8 @@ export default function ContactCTA() {
                 Get Directions
               </a>
               <a
-                href={`mailto:${companyInfo.email}`}
+                href="mailto:stnmdu@gmail.com"
+                aria-label="Send an email to ST Natarajan & Sons"
                 className="border border-steel/50 hover:border-off-white text-off-white px-8 py-4 uppercase tracking-widest font-bold text-sm transition-all duration-300"
               >
                 Email Inquiry

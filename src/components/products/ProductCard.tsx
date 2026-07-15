@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ProductItem } from "@/data/products";
-import { ArrowRight } from "lucide-react";
+import IndustrialInteraction from "@/components/ui/IndustrialInteraction";
 
 export default function ProductCard({ product }: { product: ProductItem }) {
   return (
@@ -11,7 +11,7 @@ export default function ProductCard({ product }: { product: ProductItem }) {
           src={product.image}
           alt={product.name}
           fill
-          className="object-contain p-6 mix-blend-multiply group-hover:scale-110 transition-transform duration-700 ease-out"
+          className="object-contain p-6 mix-blend-multiply group-hover:scale-110 transition-transform duration-700 ease-out animate-image-fade"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
       </div>
@@ -22,12 +22,10 @@ export default function ProductCard({ product }: { product: ProductItem }) {
           </h4>
           <div className="w-8 h-0.5 bg-industrial-red mb-6 group-hover:w-16 transition-all duration-500 ease-out" />
         </div>
-        <Link 
-          href="/contact"
-          className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-steel-light group-hover:text-industrial-red transition-colors mt-4"
-        >
-          Enquire Now
-          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
+        <Link href="/contact" className="inline-flex mt-4">
+          <IndustrialInteraction className="text-xs font-bold uppercase tracking-widest text-steel-light group-hover:text-industrial-red">
+            Enquire Now
+          </IndustrialInteraction>
         </Link>
       </div>
     </div>

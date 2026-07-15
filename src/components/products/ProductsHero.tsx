@@ -1,15 +1,23 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 export default function ProductsHero() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0px", "30px"]);
+
   return (
-    <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 bg-charcoal overflow-hidden border-b border-steel/20">
-      <div className="absolute inset-0 z-0">
+    <section ref={ref} className="relative pt-32 pb-24 md:pt-40 md:pb-32 bg-charcoal overflow-hidden border-b border-steel/20">
+      <motion.div style={{ y }} className="absolute inset-0 z-0">
         <Image
           src="/images/metal-bolts.png"
           alt="Hardware for every requirement"
@@ -18,13 +26,13 @@ export default function ProductsHero() {
           className="object-cover object-center opacity-20 mix-blend-overlay"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/90 via-charcoal/80 to-charcoal" />
-      </div>
+      </motion.div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }}
         >
           <div className="flex items-center justify-center space-x-2 text-steel-light text-xs md:text-sm uppercase tracking-widest font-bold mb-8">
             <Link href="/" className="hover:text-off-white transition-colors">
