@@ -24,7 +24,7 @@ export default function QuickActions() {
             </IndustrialInteraction>
           </Link>
 
-          <Link href="https://www.google.com/maps/search/?api=1&query=No.+29,+North+Masi+Street,+Simmakkal,+Madurai+-+625001,+Tamil+Nadu,+India" target="_blank" rel="noopener noreferrer" className="w-full">
+          <Link href="https://maps.app.goo.gl/qruyoFsn6QoSSXwy6" target="_blank" rel="noopener noreferrer" className="w-full">
             <IndustrialInteraction className="w-full bg-near-black text-off-white hover:border-steel p-4 flex flex-col items-center justify-center text-center space-y-2 border border-steel/20 group">
               <MapPin className="w-6 h-6 mb-1 text-industrial-red opacity-90 group-hover:scale-110 transition-transform" />
               <span className="font-heading uppercase tracking-widest text-xs font-bold">Directions</span>

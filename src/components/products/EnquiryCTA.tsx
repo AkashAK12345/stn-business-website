@@ -35,7 +35,7 @@ export default function EnquiryCTA() {
               </a>
 
               <a
-                href="https://www.google.com/maps/search/?api=1&query=No.+29,+North+Masi+Street,+Simmakkal,+Madurai+-+625001,+Tamil+Nadu,+India"
+                href="https://maps.app.goo.gl/qruyoFsn6QoSSXwy6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center justify-center p-8 bg-near-black border border-steel/20 hover:border-industrial-red transition-all duration-300 group"

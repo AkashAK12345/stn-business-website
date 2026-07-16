@@ -7,11 +7,12 @@ const persons = [
   { name: "N. Ambalakannan", phone: "+91 94433 64059", rawPhone: "+919443364059" },
   { name: "N. Velavan", phone: "+91 98421 26662", rawPhone: "+919842126662" },
   { name: "N. Murugananth", phone: "+91 94433 64089", rawPhone: "+919443364089" },
+  { name: "Vasanth Kumar", phone: "+91 96557 64059", rawPhone: "+919655764059" },
 ];
 
 export default function ContactPersons() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
       {persons.map((person, index) => (
         <motion.a
           href={`tel:${person.rawPhone}`}

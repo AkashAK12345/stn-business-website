@@ -22,7 +22,7 @@ export default function ContactCTA() {
             </h2>
             
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <Link href="https://www.google.com/maps/search/?api=1&query=No.+29,+North+Masi+Street,+Simmakkal,+Madurai+-+625001,+Tamil+Nadu,+India" target="_blank" rel="noopener noreferrer" className="block">
+              <Link href="https://maps.app.goo.gl/qruyoFsn6QoSSXwy6" target="_blank" rel="noopener noreferrer" className="block">
                 <IndustrialInteraction className="bg-industrial-red hover:bg-industrial-red-hover text-off-white px-8 py-4 uppercase tracking-widest font-bold text-sm w-full sm:w-auto border border-transparent">
                   Visit Our Store
                 </IndustrialInteraction>

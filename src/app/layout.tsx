@@ -16,8 +16,24 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://stnmdu.in"),
   title: "S. T. Natarajan & Sons | Hardware & Industrial Supplies since 1977",
   description: "S. T. Natarajan & Sons has been serving Madurai since 1977, offering premium hardware, fasteners, power tools, and industrial supplies.",
+  openGraph: {
+    title: "S. T. Natarajan & Sons",
+    description: "Premium hardware, fasteners, and industrial supplies in Madurai since 1977.",
+    url: "https://stnmdu.in",
+    siteName: "S. T. Natarajan & Sons",
+    images: [
+      {
+        url: "/icon.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

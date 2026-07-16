@@ -15,7 +15,7 @@ Near North Krishnan Temple,
 Simmakkal, Madurai – 625001,
 Tamil Nadu, India`;
 
-  const mapLink = "https://www.google.com/maps/search/?api=1&query=No.+29,+North+Masi+Street,+Simmakkal,+Madurai+-+625001,+Tamil+Nadu,+India";
+  const mapLink = "https://maps.app.goo.gl/qruyoFsn6QoSSXwy6";
 
   const handleCopy = async () => {
     try {

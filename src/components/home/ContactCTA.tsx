@@ -43,7 +43,7 @@ export default function ContactCTA() {
 
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=No.+29,+North+Masi+Street,+Simmakkal,+Madurai+-+625001,+Tamil+Nadu,+India"
+                href="https://maps.app.goo.gl/qruyoFsn6QoSSXwy6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-industrial-red hover:bg-industrial-red-hover text-off-white px-8 py-4 uppercase tracking-widest font-bold text-sm transition-all duration-300"
