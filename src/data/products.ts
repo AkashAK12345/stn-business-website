@@ -40,16 +40,6 @@ export const productCategories: ProductCategory[] = [
     ],
   },
   {
-    id: "cat-3",
-    name: "Door Accessories",
-    slug: "door-accessories",
-    image: "/images/door-accessories.png",
-    items: [
-      { id: "p-8", name: "Main Door Lock", slug: "main-door-lock", categoryId: "cat-3", image: "/images/products/door-accessories/main-door-lock.png" },
-      { id: "p-9", name: "Brass Door Knocker", slug: "brass-door-knocker", categoryId: "cat-3", image: "/images/products/door-accessories/brass-door-knocker.png" },
-    ],
-  },
-  {
     id: "cat-4",
     name: "Drill Bits",
     slug: "drill-bits",

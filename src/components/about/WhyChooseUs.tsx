@@ -62,7 +62,7 @@ export default function WhyChooseUs() {
               
               <div className="relative aspect-[4/3] w-full max-w-md bg-near-black p-4 mt-12 hidden lg:block border border-steel/20 shadow-2xl group overflow-hidden">
                 <Image
-                  src="/images/b7-stud-bolt.png"
+                  src="/images/products/metal-bolts/b7-stud-bolt.png"
                   alt="Industrial Fasteners"
                   fill
                   className="object-contain p-8 mix-blend-screen opacity-80 group-hover:scale-110 transition-transform duration-700 animate-image-fade grayscale"
