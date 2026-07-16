@@ -104,10 +104,10 @@ export default function Footer() {
                   <span>{companyInfo.phone}</span>
                 </li>
               )}
-              <li className="flex items-center space-x-3 text-steel-light text-sm">
-                <Mail className="w-5 h-5 text-industrial-red shrink-0" />
-                <a href="mailto:stnmdu@gmail.com" aria-label="Send an email to ST Natarajan & Sons" className="hover:text-industrial-red transition-colors">
-                  {companyInfo.email}
+              <li className="flex items-center text-steel-light text-sm">
+                <a href="mailto:stnmdu@gmail.com" aria-label="Send an email to ST Natarajan & Sons" className="flex items-center space-x-3 hover:text-industrial-red transition-colors group">
+                  <Mail className="w-5 h-5 text-industrial-red shrink-0 group-hover:scale-110 transition-transform" />
+                  <span>{companyInfo.email}</span>
                 </a>
               </li>
             </ul>

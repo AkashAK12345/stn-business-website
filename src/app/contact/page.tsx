@@ -5,7 +5,6 @@ import WhatsAppSection from "@/components/contact/WhatsAppSection";
 import LocationMap from "@/components/contact/LocationMap";
 import ContactDetails from "@/components/contact/ContactDetails";
 import TrustSignal from "@/components/contact/TrustSignal";
-import ContactForm from "@/components/contact/ContactForm";
 import ContactCTA from "@/components/contact/ContactCTA";
 
 export const metadata = {
@@ -48,11 +47,6 @@ export default function ContactPage() {
 
             {/* Trust Signal Panel */}
             <TrustSignal />
-
-            {/* 6. Contact Form */}
-            <div>
-              <ContactForm />
-            </div>
 
           </div>
           

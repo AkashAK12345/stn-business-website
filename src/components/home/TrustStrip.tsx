@@ -1,6 +1,7 @@
 "use client";
 
 import CountUp from "@/components/ui/CountUp";
+import { productCategories } from "@/data/products";
 
 export default function TrustStrip() {
   return (
@@ -28,7 +29,7 @@ export default function TrustStrip() {
 
           <div className="px-4 text-center">
             <p className="text-4xl md:text-5xl font-heading font-bold text-off-white mb-2">
-              <CountUp to={5} />
+              <CountUp to={productCategories.length} />
             </p>
             <p className="text-charcoal uppercase tracking-widest font-bold text-xs md:text-sm">
               Core Product Categories

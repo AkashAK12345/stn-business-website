@@ -10,7 +10,9 @@ export default function ContactDetails() {
       {/* Email Card */}
       <div className="bg-white border border-steel/20 p-8 shadow-sm flex flex-col items-start group hover:border-industrial-red/40 transition-colors duration-300">
         <h3 className="font-heading text-2xl uppercase tracking-widest text-charcoal mb-6 flex items-center">
-          <Mail className="w-6 h-6 text-industrial-red mr-3 group-hover:scale-110 transition-transform" />
+          <a href="mailto:stnmdu@gmail.com" aria-label="Send email">
+            <Mail className="w-6 h-6 text-industrial-red mr-3 group-hover:scale-110 transition-transform cursor-pointer" />
+          </a>
           Email Enquiries
         </h3>
         

@@ -17,12 +17,12 @@ export default function QuickActions() {
           className="grid grid-cols-2 md:grid-cols-4 gap-4"
         >
           
-          <Link href="tel:+919443364059" className="w-full">
+          <a href="tel:+919655764059" className="w-full">
             <IndustrialInteraction className="w-full bg-industrial-red text-off-white hover:bg-industrial-red-hover p-4 flex flex-col items-center justify-center text-center space-y-2 border border-transparent group">
               <Phone className="w-6 h-6 mb-1 opacity-90 group-hover:scale-110 transition-transform" />
               <span className="font-heading uppercase tracking-widest text-xs font-bold">Call Now</span>
             </IndustrialInteraction>
-          </Link>
+          </a>
 
           <Link href="https://maps.app.goo.gl/qruyoFsn6QoSSXwy6" target="_blank" rel="noopener noreferrer" className="w-full">
             <IndustrialInteraction className="w-full bg-near-black text-off-white hover:border-steel p-4 flex flex-col items-center justify-center text-center space-y-2 border border-steel/20 group">
