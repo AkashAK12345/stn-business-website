@@ -29,10 +29,10 @@ export const productCategories: ProductCategory[] = [
     id: "cat-2",
     name: "TVS Hex Bolt & Nut",
     slug: "tvs-hex-bolt-nut",
-    image: "/images/catalogue/tvs-hex-bolt-nut.png",
+    image: "/images/catalogue/tvs-hex-bolt-nut-v2.png",
     items: [
-      { id: "p-2", name: "TVS Hex Bolt", slug: "tvs-hex-bolt", categoryId: "cat-2", image: "/images/products/p_tvs_hex_bolt_1784379962205.png" },
-      { id: "p-3", name: "TVS Hex Nut", slug: "tvs-hex-nut", categoryId: "cat-2", image: "/images/products/p_tvs_hex_nut_1784379972593.png" },
+      { id: "p-2", name: "TVS Hex Bolt", slug: "tvs-hex-bolt", categoryId: "cat-2", image: "/images/catalogue/tvs-hex-bolt-nut-v2.png" },
+      { id: "p-3", name: "TVS Hex Nut", slug: "tvs-hex-nut", categoryId: "cat-2", image: "/images/catalogue/tvs-hex-bolt-nut-v2.png" },
     ],
   },
   {
